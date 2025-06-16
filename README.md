@@ -24,4 +24,19 @@
 ---
 
 ## 📂 Project Structure
+DSAForge/
+├── frontend/ # React-based UI
+├── backend/ # Flask APIs & DB config
+└── README.md
+
+---
+
+## 🔧 Tech Stack
+- Frontend: React.js
+- Backend: Python Flask
+- Database: MySQL
+
+---
+
+Made with ❤️ by Bhavya Jain
 
