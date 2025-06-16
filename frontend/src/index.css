@@ -1,0 +1,160 @@
+/* 🌐 Root-level variables and global styles */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* 🔗 Anchor tags */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* 🧍 Body and layout */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: inherit;
+  color: inherit;
+}
+
+/* 📦 Ensure root and full layout occupy viewport */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 🧾 Headings */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+h2, h3, h4 {
+  margin: 0.5em 0;
+  word-wrap: break-word;
+}
+
+/* 🔘 Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  line-height: normal;
+}
+
+button:hover {
+  border-color: #646cff;
+  transform: scale(1.03);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* 🛠 Global box-sizing + layout fix */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* 📦 Optional container wrapper */
+.container-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* 🧭 Ensure app layout fills full height for footer positioning */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* 📱 Responsive Typography for Small Devices */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 0.95em;
+    padding: 0.5em 1em;
+  }
+
+  .container-wrapper {
+    padding: 0.75rem;
+  }
+}
+
+/* 🌞 Light mode overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #000000;
+  }
+
+  button:hover {
+    border-color: #747bff;
+    background-color: #ebebeb;
+  }
+}

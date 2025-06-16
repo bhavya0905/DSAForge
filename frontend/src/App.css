@@ -1,0 +1,110 @@
+/* 🌐 Main Root Layout */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* 🔰 Logo Animation + Hover Effects */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* 🔁 Spinning animation for React logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* 🃏 Cards */
+.card {
+  padding: 2em;
+}
+
+/* 📘 Docs note */
+.read-the-docs {
+  color: #888;
+}
+
+/* 📊 Dashboard & Leaderboard Containers */
+.dashboard-container,
+.leaderboard-container {
+  padding: 2rem;
+  color: #e0e0e0;
+  background-color: #0b0f1a;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto; /* ✅ Prevents horizontal overflow */
+}
+
+/* 📐 Stats Grid Layout */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* 📊 Stat Cards */
+.stat-card {
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ea5e9;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f1f5f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ✨ Hover enhancement for stat cards */
+.stat-card:hover {
+  transform: scale(1.02);
+}
+
+/* 🏆 Leaderboard Table */
+.leaderboard-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  border: 1px solid #2d3748;
+  padding: 12px;
+  text-align: center;
+  background-color: #1f2937;
+  color: #f8fafc;
+}
+
+.leaderboard-table th {
+  background-color: #334155;
+  font-weight: 600;
+}
